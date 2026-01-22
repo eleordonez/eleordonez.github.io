@@ -2,8 +2,8 @@
 :root{
   --bg:#fbfeff;
   --card:#ffffff;
-  --accent:#1f7ea8;
-  --accent-2:#2aa07b;
+  --accent:#caa014e8;
+  --accent-2:#b35d1e;
   --muted:#6b7280;
   --max-w:1100px;
   --radius:12px;
@@ -48,6 +48,8 @@ body{margin:0;background:var(--bg);color:#102a43;line-height:1.5}
 .contact-form{display:grid;gap:10px;max-width:480px}
 .contact-form label{display:block}
 .contact-form input, .contact-form textarea{width:100%;padding:8px;border-radius:8px;border:1px solid #d1e8f0}
+
+.gotcha-field {position: absolute;left: -9999px;top: -9999px;opacity: 0;}
 
 @media (max-width:800px){
   .header-inner{flex-direction:column;gap:10px;align-items:flex-start}

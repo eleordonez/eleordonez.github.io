@@ -25,7 +25,11 @@
       <h2>Contact</h2>
       <p>Interested in working together on a project? Let’s connect!</p>
 
-      <form class="contact-form" action="mailto:elena@barretblau.com" method="post" enctype="text/plain">
+      <form class="contact-form" action="https://formspree.io/f/mykzkepg" method="POST">
+
+        <input type="hidden" name="_next" value="https://eleordonez.github.io/success.html">
+        <input type="text" name="_gotcha" style="display:none">
+
         <label>Name<input type="text" name="name" required></label>
         <label>Email<input type="email" name="email" required></label>
         <label>Message<textarea name="message" rows="6" required></textarea></label>
@@ -39,10 +43,13 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year5"></span> Elena Ordóñez</p>
+      <p>© <span id="year"></span> Elena Ordóñez · <a href="contact.html">Contact</a></p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/elenaom/" aria-label="LinkedIn">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
-<script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
